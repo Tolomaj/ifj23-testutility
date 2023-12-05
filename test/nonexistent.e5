@@ -1,0 +1,54 @@
+foo(x,x : "fdsfsf",25,"fdsfsd")
+
+var a: String = foo(x,x : "fdsfsf",25,"fdsfsd")
+
+func foo( _ x:String?, y y :Int)-> Int {
+    a = a + " "
+
+    foo()
+
+    foo(x,x : "fdsfsf",25,"fdsfsd")
+    y = y/5
+    return 5
+
+}
+var count = 0
+
+while (count < 5 ){
+    write("Count is (count)")
+    count = 1
+}
+let temperature = 25
+
+if (temperature > 30) {
+    write("It's hot!")
+} else {
+    write("It's not too hot.")
+}
+
+let optionalName: String? = "John"
+
+if let name {
+    write("Hello, (name)!")
+} else {
+    write("Name is nil.")
+}
+
+func add(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+
+let sum = add(3, 4)
+
+func calculateSquare(_ number: Int) -> Int {
+    return number * number
+}
+
+let square = calculateSquare(5)
+
+func greet(_ name: String )  {
+    write("Hello, (name)!")
+}
+
+greet() // Outputs: Hello, Guest!
+greet(name: "Alice") // Outputs: Hello, Alice!

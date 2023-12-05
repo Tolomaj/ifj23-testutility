@@ -1,0 +1,23 @@
+//VARIABLES
+
+var x = 5
+var b = x
+var c = x+x
+var d = "strgds" 
+
+if(1 == 1 ){
+    var x = 5
+    var b = x
+    var c = x+x
+    var d = "strgds" 
+}
+
+
+
+var d :String = 5
+var d :Int = "fdsfdsf"
+var d :Double = foo()
+
+var d :String? = 5
+let d :Int? = 5
+var d :Double? = 5

@@ -1,0 +1,13 @@
+if(XX){
+    AA = 5
+    AA = 4
+    if(1){
+        CC = 1
+    }
+}
+
+while( XX == SS ){
+    code = 6
+}
+
+nA 

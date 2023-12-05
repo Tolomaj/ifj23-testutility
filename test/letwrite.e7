@@ -1,0 +1,3 @@
+// tu by měla být chyba
+let a = 5
+a = a + 5

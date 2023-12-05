@@ -1,0 +1,18 @@
+var a = 2
+var ab = a + 2
+var acb : Int = nil
+var abs : Int
+
+a = a + " "
+a = a - (2 + a)
+
+//a = a + 2 + " "
+
+
+// otázkou jestli zapsané:
+
+// var a
+// a = 2
+
+// je validní. bo teoreticky nic tomu nebrání pokud se nezanoříš do nějkého ifu
+// ale teorie je přesně to proč propadám z matky XDD

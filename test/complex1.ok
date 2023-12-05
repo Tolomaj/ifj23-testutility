@@ -1,0 +1,21 @@
+
+func decrement(of value: Int, by nvm: Int) {
+    value = 5
+    write("Function with inout parameter: (value)")
+}
+
+
+var result : Int?
+result = 5*2
+
+var n = 4
+
+if (n < 2) {
+    result = 1
+    if(1==1){
+        //nevím něco
+    }
+} else {
+    let decremented_n = decrement(of: n, by: 1)
+    result = n * result!
+}

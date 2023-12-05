@@ -1,0 +1,6 @@
+
+var a = """
+ahoj jak je  lol 
+"""
+
+a = " kočka \u{55} čka"

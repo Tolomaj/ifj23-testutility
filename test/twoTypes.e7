@@ -1,0 +1,11 @@
+var c = 5.5
+var a = 5
+
+var z = " "
+
+// otázkou když jenda proměnná je float a druhá int neměl by být error?
+var b = c + a 
+
+func foo(_ x:Int)->Int{
+    return 5
+}

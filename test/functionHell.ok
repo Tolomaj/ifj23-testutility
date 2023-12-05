@@ -1,0 +1,56 @@
+var result : Int? = 15 + 5
+var y : Int
+
+func brod(_ x : String, with y : String) -> String {
+    let w = x + y
+    return x + " " + y
+}
+
+func narow(nvm x : Int) -> String {
+    let v = x + y
+    var s: String = "kolo"
+    return "nevím" + s
+}
+
+write()
+
+
+concat(x: "nvm", with: "nvm")
+
+if(1 == 1)
+{
+    var string : String = concat(x: "nvm", with: "nvm")
+
+}
+
+
+if(1 == 1)
+{
+    var string = concat(
+        x: "nvm", with: "nvm"
+        )
+
+}
+
+func borow1(nvm x : Int, _ y : String) -> String {
+    let p = x + x
+    return " " + y
+}
+
+
+func borow2(nvm x : Int, _ y : String) -> String {
+    let k = chr(x)
+    var b = ord(k)
+    return k + " " + y
+}
+
+
+
+func concat(_ x : String, with y : String) -> String {
+    let p = x + y
+    return x + " " + y
+}
+
+func borow(nvm x : Int, _ y : String) -> String {
+    return "helo"
+}

@@ -1,0 +1,8 @@
+var variable= 10
+
+function6(variable)
+
+func function6(_ value: Int) {
+    value = 5
+    write("Function with inout parameter: (value)")
+}

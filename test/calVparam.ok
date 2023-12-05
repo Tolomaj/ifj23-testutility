@@ -1,0 +1,8 @@
+var c: Int= 5
+var a = 5
+
+func foo(_ x:Int)->Int{
+    return 5
+}
+
+var x:Int=foo(c)

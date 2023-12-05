@@ -1,0 +1,33 @@
+var x = 5
+let y = 2
+let s = 8
+
+var a : Int?
+
+if (x<y){
+    //comment
+}
+
+if (x<y)
+{
+    a = 9
+}
+
+if (x<=5)
+{
+    //comment
+    if(5==5){ x= 5*6+(8*s)
+    }
+}
+else{
+    let x="fdsfsdf"
+}
+
+if let a{
+    while(a<8){
+        a = 5
+    }
+}
+else{
+    let x="fdsfsdf"
+}

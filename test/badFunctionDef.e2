@@ -1,0 +1,57 @@
+// Function with no parameters
+
+
+// Function with one parameter
+func function2( param1: Int) {
+    print("Function with one parameter: (param1)")
+}
+
+// Function with two parameters
+func function3( param1: String,  param2: Double) {
+    print("Function with two parameters: (param1), (param2)")
+}
+
+// Function with parameter having a default value
+func function4( param1: Int) {
+    print("Function with default parameter value: (param1)")
+}
+
+// Function with variadic parameters
+func function5( numbers: Int) {
+    print("Function with variadic parameters: (numbers)")
+}
+
+// Function with inout parameter
+func function6( value: Int) {
+    value += 5
+    print("Function with inout parameter: (value)")
+}
+
+// Function with optional parameter
+func function7( name: String?) {
+    if let unwrappedName = name {
+        print("Function with optional parameter: (unwrappedName)")
+    } else {
+        print("Function with optional parameter: nil")
+    }
+}
+
+// Function with a combination of parameters
+func function8( a: Int,  b: Double, c: String?,  d: Int, e: Int) {
+    print("Function with a combination of parameters:")
+    print("a: (a), b: (b), c: (c ?? "nil"), d: (d), e: (e)")
+}
+
+// Function calls with different parameter combinations
+function1()
+function2(42)
+function3(param1: "Hello", 3.14)
+function4()
+function5(1, 2, 3)
+
+var variable = 10
+
+function6(variable)
+function7("Optional")
+function7(nil)
+function8(5, c: "Swift", variable, e: 1, 2, 3)
