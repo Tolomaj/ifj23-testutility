@@ -14,6 +14,9 @@ import subprocess
 from subprocess import run
 from colorama import Fore, Back, Style
 
+#decodeType = "utf-8"
+decodeType = "cp850"
+
 def printOK():
     print("  [" + Fore.GREEN + 'OK' + Style.RESET_ALL + ']')
 
@@ -40,19 +43,19 @@ def testFile(file,expectedOutcome):
         return
     if(compiler_process.returncode != expectedOutcome and expectedOutcome == 0):
         printERR()
-        print(compiler_stderr.decode("utf-8"))
+        print(compiler_stderr.decode(decodeType))
         return
     if(compiler_process.returncode == expectedOutcome and  expectedOutcome != 0):
         printOKfail()
         return
     if(compiler_process.returncode != expectedOutcome and compiler_process.returncode != 0):
         printERRdiferentError()
-        print(compiler_stderr.decode("utf-8"))
+        print(compiler_stderr.decode(decodeType))
         return
     if(compiler_process.returncode != expectedOutcome and expectedOutcome != 0 and compiler_process.returncode == 0):
         printERRisOK()
         print("------------------ program neselhal(jak bylo očekáváno)  výpis stdout -------------------------------")
-        print(compiler_stdout.decode("utf-8"))
+        print(compiler_stdout.decode(decodeType))
         print("------------------------------------- konec výpisu programu -----------------------------------------")
         return
 
@@ -62,8 +65,8 @@ def testFile(file,expectedOutcome):
 print("--------------------- výpis z make -----------------------------------")
 make_process = subprocess.Popen(["make"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 make_stdout, make_stderr = make_process.communicate()
-print(make_stderr.decode("utf-8"))
-print(make_stdout.decode("utf-8"))
+print(make_stderr.decode("cp850"))
+print(make_stdout.decode("cp850"))
 print("------------------ konec výpisu z make -------------------------------\n\n\n\n")
 
 
